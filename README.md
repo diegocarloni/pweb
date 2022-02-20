@@ -1,2 +1,2 @@
 # pweb
- PWEB - Programacao_Web - Fatec Ipiranga - 4 sem
+ PWEB - Programacao_Web - Fatec Ipiranga - 4 semestre
