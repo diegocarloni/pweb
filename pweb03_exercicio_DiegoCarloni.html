@@ -19,7 +19,38 @@
 			<li>Críticas</li>
 			<li>Orçamentos</li></font>
 		</ul>
-        <font color="black" size="4px" face="arial">Caso queira ver nossos produtos, clique <a href="http://professor.norton.net.br" target="new"> aqui</a> <br/> </font>    
+        <font color="black" size="4px" face="arial">Caso queira ver nossos produtos, clique <a href="https://www.w3schools.com/" target="new"> aqui</a> <br/> </font> 
+        <br/>
+        <!-- Tags de objeto 
+            <form method="post" action="gravar.php">  -->
+        <form id="frm1">
+        <!-- required = Obrigatório   -->
+        Nome: <input type="text" id="txtNome"
+        placeholder="Digite seu nome completo" required
+        size="71" pattern="[A-z\s]{6,80}" /> <!-- pattern = Expressao regular RegEx   -->
+        <br/>  
+        E-mail: <input type="email" id="txtEmail" required
+        placeholder="Digite seu e-mail"
+        size="70" />
+        <br/>
+        Telefone: <input type="number" id="txttelefone"
+        placeholder="Digite seu telefone" required
+        size="71" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" /> <!-- pattern = Expressao regular RegEx   -->
+        <br/>
+        Assunto: <select id="Assunto">
+            <option selected >Dúvidas</option>
+            <option>Sugestões</option>
+            <option>Reclamações</option>  <!-- selected: traz pré marcado -->  
+            </select><br/><br/>
+   Mensagem: <textarea id="msg" rows="5" cols="50"></textarea>
+   <br/><br/>
+   <button id="bt1">Enviar</button>
+   </form> 
+   <br/>
+
+
+        
+        <br/>
 
 	</body>
 </html>
