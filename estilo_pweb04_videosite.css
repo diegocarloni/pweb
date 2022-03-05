@@ -1,0 +1,44 @@
+/* Cascade Style Sheet - CSS
+    Folha de estilo em cascata */
+
+/* Seletor por tag */
+body
+{
+        background-color: black;
+        color: white;
+        font-family: Arial;       
+}
+h1
+{
+        color: yellow;
+}
+input, select, textarea
+{
+        background-color: orange; /* fundo */
+        border: dotted 2px white; /* dotted = pontilhada*/
+        margin: 5px; /*espaçamento externo*/
+}
+form
+{
+        border: solid 1px white;
+        border-radius: 15px;
+        padding: 15px; /*espaçamento interno*/
+}
+
+/* Seletor por id */
+#senha
+{
+        background-color: magenta;
+        color: white;
+}
+
+/* Seletor por apelido ou classe */
+.botoes
+{
+        width: 20%;
+        background-color: white;
+        color: black;
+        height: 40px;
+        border: solid 2px lime;
+        border-radius: 10px;
+}

@@ -1,0 +1,83 @@
+/* Cascade Style Sheet - CSS
+    Folha de estilo em cascata */
+
+/* Seletor por tag */
+body
+{
+        background-color: wheat;
+        color: black;
+        font-family: Arial;       
+}
+h1
+{
+        color: rgb(230, 110, 97);
+        font-size: 30px;
+}
+input, select, textarea
+{
+        color: rgb(230, 110, 97) ;
+        background-color: white; /* fundo */
+        border: dotted 2px gray; /* dotted = pontilhada*/
+        margin: 5px; /*espaçamento externo*/
+}
+form
+{
+        border: solid 3px white;
+        border-radius: 15px;
+        padding: 20px; /*espaçamento interno*/
+}
+
+/* Seletor por id */
+#txtNome
+{
+        background-color: black;
+        color: pink;
+}
+
+#Assunto
+{
+        color: blueviolet;
+}
+
+#bt1
+{
+        width: 20%;
+        margin-left: 80%;
+        border-radius: 5px;
+        background-color: rgb(230, 110, 97);
+        color: white;
+}
+
+/* Seletor por apelido ou classe */
+.mensagem
+{
+        width: 20%;
+        background-color: rgba(0, 0, 0, 0.308);
+        color: white;
+        height: 80px;
+        border: solid 2px rgb(255, 0, 242);
+        border-radius: 10px;
+}
+
+banana{
+        width: 28%;
+        text-align: right;
+        vertical-align: top;
+        display: inline-table;
+}
+
+label2{
+    width: 28%;
+    text-align: right;
+    vertical-align: top;
+    display: inline-table;
+    padding-top: 4%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: blueviolet;
+
+    opacity: 1; /* Firefox */
+
+  }

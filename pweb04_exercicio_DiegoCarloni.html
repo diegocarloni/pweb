@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+    <!-- Cabeçalho -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Palavras-chaves para pesquisa -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título da página -->
+        <title>Fale conosco</title>
+        <link rel="stylesheet" href="estilo_pweb04_exercicio.css" />
+        <meta name="description" content="primeiro exercício com página de estilo css" />
+	    <meta name="keywords" content="pweb, html5, css, exercício, fatec ipiranga, ads" />
+    </head>
+    <!-- Corpo  -->
+    <body>
+        <h1>Contato</h1>
+        <p>
+                <i>Seja bem vindo, preencha o <b>formulário</b> abaixo para: </i>
+        </p>
+        <ul>
+			<li>Dúvidas</li>
+			<li>Sugestões</li>
+			<li>Críticas</li>
+			<li>Orçamentos</li></font>
+		</ul>
+        <p>
+        Caso queira ver nossos produtos, clique <a href="https://www.w3schools.com/" target="new"><i>aqui</i></a> 
+        </p>
+        <!-- Tags de objeto 
+            <form method="post" action="gravar.php">  -->
+        <form id="frm1">
+        <!-- required = Obrigatório   -->
+        <banana>Nome:</banana> <input type="text" id="txtNome"
+        placeholder="Digite seu nome completo" required
+        size="70" pattern="[A-z\s]{6,80}" /> <!-- pattern = Expressao regular RegEx   -->
+        <br/>  
+        <banana>E-mail:</banana> <input type="email" id="txtEmail" required
+        placeholder="Digite seu e-mail"
+        size="70" />
+        <br/>
+        <banana>Telefone:</banana> <input type="tel" id="txttelefone"
+        placeholder="Digite seu telefone" required
+        size="70" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" /> <!-- pattern = Expressao regular RegEx   -->
+        <br/>
+        <banana>Assunto:</banana> <select id="Assunto">
+            <option selected >Dúvidas</option>
+            <option>Sugestões</option>
+            <option>Reclamações</option>  <!-- selected: traz pré marcado -->  
+            </select><br/><br/>
+        <!-- Botões de escolha --> <!-- ("radio" Permite marcar apenas uma opção de cada vez, ao marcar uma, desmarca a outra) -->
+        <banana>Deseja receber uma cópia deste e-mail: </banana>
+        <input type="radio" id="o1" name="opcao" />Sim
+        <input type="radio" id="o2" name="opcao" />Não
+        <br/>
+        <label2>Mensagem:</label2> <textarea id="msg" rows="7" cols="68" class="mensa    gem"></textarea>
+        <br/><br/>
+        <button id="bt1">Enviar</button>
+        </form> 
+        <br/><br/>
+
+	</body>
+</html>
