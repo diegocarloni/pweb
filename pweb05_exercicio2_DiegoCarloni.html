@@ -1,0 +1,84 @@
+<!-- Hierarquia de classe -->
+<!DOCTYPE html>
+<html lang="pt=br">
+    <!-- Cabeçalho -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título da página -->
+        <title>CSS em cascata ex2- PW05</title>
+        <link rel="stylesheet" href="pweb05_exercicio2_estilo5_DiegoCarloni.css" />
+        <!-- Palavras-chaves para pesquisa -->
+        <meta name="description" content="Aplicando conceito castata no ex_4" />
+	    <meta name="keywords" content="pweb, html5, css, cascata, exercício, fatec ipiranga, ads" />
+    </head>
+    <!-- Corpo  -->
+    <body>
+        <div class="content">
+            <h1>Contato</h1>
+        
+            <p class="text">
+                Seja bem vindo, preencha o <span>formulário</span> abaixo para: 
+            </p>
+        
+        <ul>
+			<li>Dúvidas</li>
+			<li>Sugestões</li>
+			<li>Críticas</li>
+			<li>Orçamentos</li>
+		</ul>
+        
+        <p>
+        Caso queira ver nossos produtos, clique <a href="https://www.w3schools.com/" target="new"><i>aqui</i></a> 
+        </p>
+        
+        <!-- Tags de objeto 
+        <form method="post" action="gravar.php">  -->
+        <form action="http://professor.norton.net.br/" method="post">
+            <div class="form-group-50">
+                <label for="input-email">E-mail: </label><br/>
+                <input type="email" name="input-email" id="input-email" placeholder="Digite seu e-mail" required  size="70" maxlength="60"  /><br/><br/>
+            </div>
+            
+            <div class="form-group-50">
+                <label for="input-name">Nome: </label><br/>
+                <input type="text" name="input-name" id="input-name" placeholder="Digite seu nome completo"  required size="70" maxlength="60" pattern="[A-z\s]{6,80}" /><br/><br/> 
+            </div>  <!-- required = Obrigatório   --> <!-- pattern = Expressao regular RegEx   -->
+            
+            <div class="form-group-100">
+                <label for="input-phone">Telefone: </label><br/>
+                <input type="tel" name="input-phone" id="input-phone" placeholder="Digite seu telefone no formato (xx)xxxxx-xxxx" required size="35" maxlength="14" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$" /><br/><br/>
+            </div> <!-- pattern = Expressao regular RegEx   -->
+            
+            <div class="form-group-100">
+                <label for="select">Assunto:</label><br/>
+                <select name="select" id="select">
+                    <option selected value="Duvidas">Duvidas</option>
+                    <option value="Sugestões">Sugestões</option>
+                    <option value="Criticas">Criticas</option>
+                    <option value="Orçamentos">Orçamentos</option>
+                </select><br/><br/>
+            </div>
+
+            <!-- Botões de escolha --> <!-- ("radio" Permite marcar apenas uma opção de cada vez, ao marcar uma, desmarca a outra) -->
+            <label for="radio">Deseja receber uma cópia deste e-mail?</label>
+            <input type="radio" name="radio" id="radio1" />	
+            <label for="radio1">Sim</label>
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2">Não</label><br/>
+            <br/>
+
+            <div class="form-group-100">
+                <label for="mensagem">Mensagem:</label><br/>
+                <textarea name="mensagem" id="mensagem" cols="68" rows="7" placeholder="Mensagem"></textarea><br/><br/>
+            </div>
+        
+            <!-- <button id="bt1">Enviar</button> -->
+            <input type="submit" value="Enviar">
+
+        </form> 
+        <br/><br/>
+
+    </body>
+</html>
