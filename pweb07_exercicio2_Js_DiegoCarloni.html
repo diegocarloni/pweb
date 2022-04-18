@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+	<head>
+		<title>PW03 - Remake Js</title>
+        <!-- Palavras-chaves para pesquisa -->
+        <meta name="description" content="Exercício 2, utilizando Js"/>
+        <meta name="keywords" content="pweb, fatec ipiranga, ads, pweb, javascript, norton"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	</head>
+	<body>
+		<h1><font size="16px" color="red" face="Arial">Contato</font></h1>
+
+        <i>Seja bem vindo, preencha o <b>formulário</b> abaixo para:</i> <br/><br/>
+        
+        <ul>
+            <li>duvidas</li>
+            <li>sugestões</li>
+            <li>criticas</li>
+            <li>orçamentos</li>
+        </ul>
+        <br/>
+
+        <p>Caso queira ver nossos produtos, clique <a href="#">aqui</a></p>
+		
+		<form>
+            <label for="nome">nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" size="60" maxlength="60" /><br/><br/>
+
+            <label for="email">email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail"  size="60" maxlength="60" /><br/><br/>
+
+            <label for="phone">telefone: </label>
+            <input type="tel" name="tel" id="tel1" placeholder="Digite seu telefone"  size="12" maxlength="9" /><br/><br/>
+
+            <label for="select">assunto:</label>
+            <select name="select" id="select">
+                <option value="Duvidas">Duvidas</option>
+                <option value="Sugestões">Sugestões</option>
+                <option value="Criticas">Criticas</option>
+                <option value="Orçamentos">Orçamentos</option>
+            </select><br/><br/>
+
+            <label for="radio">Deseja receber uma cópia deste e-mail?</label>
+            <input type="radio" name="radio" id="radio1" />
+            <label for="radio1">Sim</label>
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2">Não</label><br/><br/>
+
+            <label for="mensagem">mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Mensagem"></textarea><br/><br/>
+
+            <input type="submit" value="Enviar" onclick="validar();">
+        </form>
+	</body>
+</html>
+
+<script lang="javascript">
+	function validar()
+	{
+		if(nome.value.length <= 3){
+            alert("Informe um nome valido");
+            nome.focus();
+            nome.value="";
+			return false;
+		}
+
+		if(email.value.length < 6 || email.value.indexOf("@") <= 0 || email.value.indexOf(".") <= 0 ) {
+            alert("Informe um e-mail valido");
+            email.focus();
+            email.value="";
+			return false;
+        }
+
+        if(isNaN(tel1.value) || tel1.value.lenght < 8) {
+            alert("Informe um telefone valido");
+            tel1.focus();
+            tel1.value="";
+			return false;
+        }
+        
+        if(!radio1.checked && !radio2.checked) {
+            alert("Escolha uma das opções");
+            return false;
+        }
+
+        if(mensagem.value.length == 0){
+            alert("digite sua mensagem");
+            mensagem.focus();
+            mensagem.value="";
+			return false;
+		}
+		alert("Tudo certo");
+	}
+</script>	

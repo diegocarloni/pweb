@@ -1,0 +1,49 @@
+<!-- Hierarquia de classe -->
+<!DOCTYPE html>
+<html>
+<!-- Cabeçalho -->
+    <head>
+        <title>JavaScript- PW07</title>
+        <meta name="description" content="primeira pagina utilizando JavaScript" />
+		<meta name="keywords" content="pweb, fatec ipiranga, ads" />
+    </head>
+
+<!-- Corpo -->
+    <body>
+            <h1>JavaScript</h1>
+            <form action="">
+                n1: <input type="text" id="n1"></br>
+                n2: <input type="text" id="n2"></br>
+                <button type="button" onclick="media();">media</button></br> <!--O onclick é um dos vários eventos do javascript, que indica que vai fazer a função ao clicar no botão indicado-->
+
+                Resultado: <input type="text" id="resultado" readonly /></br> <!--O readonly indica que não é possível digitar nessa caixa de texto. Apenas o js vai alterar-->
+            </form>
+    </body>
+</html>
+
+<script lang="javascript">
+    function media() {
+        /*Condições para evitar letras e espaços em branco*/
+        if(n1.value =="" || isNaN(n1.value)) {
+            alert("Informe somente numeros !!!");
+            n1.focus(); /*Continua o cursor no n1 após o alert*/
+            n1.value=""; /*Limpa o campo */
+            return false; /*Interrompe a função == break */
+        } 
+        if(n2.value =="" || isNaN(n2.value)) {
+            alert("Informe somente numeros !!!");
+            n2.focus(); /*Continua o cursor no n2 após o alert*/
+            n2.value=""; /*Limpa o campo */
+            return false; /*Interrompe a função == break */
+        } 
+        /* || Indica OU */
+        /*isNaN  Indica que não é válido*/
+        /*var a = 6;*/
+        var a = parseFloat(n1.value); /*value significa que o js vai utilizar  valor digitado no campo n1*/
+        /*var b = 56.23;*/
+        var b = parseFloat(n2.value); /*parseFloat vai abrituir o tipo float para o dado coletado, pode se parseInt para numeros inteiros*/
+        var c = (a + b) / 2;
+        alert("O resultado da media e: " + c);
+        resultado.value=c;
+    }
+</script>
