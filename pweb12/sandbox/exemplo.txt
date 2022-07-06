@@ -1,0 +1,23 @@
+
+http://localhost:2020/cliente/
+GET => LER TODOS
+
+http://localhost:2020/cliente/2
+GET => CARREGAR um cliente
+
+http://localhost:2020/cliente/
+POST => inserir um cliente
+
+http://localhost:2020/cliente/
+PUT => alter um cliente
+
+http://localhost:2020/cliente/
+DELETE => remover um cliente
+
+
+
+http://localhost:2020/produto/vitrine
+GET
+
+http://localhost:2020/produto/34
+GET
